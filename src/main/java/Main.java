@@ -17,12 +17,10 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        Scanner scan = new Scanner(System.in);
-        String alinanUrl = scan.nextLine();
 
         Document doc = null;
         try {
-            doc = Jsoup.connect(alinanUrl).get();
+            doc = Jsoup.connect(args[0]).get();
 
         } catch (IOException e) {
             e.printStackTrace();
