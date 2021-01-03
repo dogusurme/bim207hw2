@@ -16,8 +16,6 @@ public class Main {
 
 
     public static void main(String[] args) throws IOException {
-
-
         Document doc = null;
         try {
             doc = Jsoup.connect(args[0]).get();
